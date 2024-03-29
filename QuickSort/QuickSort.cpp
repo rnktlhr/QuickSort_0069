@@ -8,7 +8,11 @@ int mov_cout = 0;
 int n;
 
 void input() {
+    while (true) {
+        cout << "Masukkan panjang element array: ";
+        cin >> n;
 
+    }
 }
 
 int main()
