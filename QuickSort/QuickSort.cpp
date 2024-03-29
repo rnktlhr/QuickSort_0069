@@ -7,6 +7,10 @@ int cmp_count = 0;
 int mov_cout = 0;
 int n;
 
+void input() {
+
+}
+
 int main()
 {
     
