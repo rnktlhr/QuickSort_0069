@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-
+//array of integers to hold values
 int arr[20];
-int cmp_count = 0;
-int mov_count = 0;
+int cmp_count = 0;//number of comparation
+int mov_count = 0;//number of data movements
 int n;
 
 void input() {
@@ -39,27 +39,27 @@ void q_short(int low, int high) {
 
     int temp;
     int pivot, i, j;
-    if (low > high) {
+    if (low > high) {//step 1
         return;
     }
 
-    pivot = arr[low];
-    j = low;
-    j = high;
+    pivot = arr[low];//step 2
+    j = low;//step 3
+    j = high;// step 4
 
-    while (i <= j) {
-        while ((arr[i] <= pivot) && (i <= high)) {
-            i++;
+    while (i <= j) {//step 10
+        while ((arr[i] <= pivot) && (i <= high)) {//step 5
+            i++;//step 6
             cmp_count++;
         }
         cmp_count++;
 
-        while ((arr[j] > pivot) && (j >= low)) {
-            j--;
+        while ((arr[j] > pivot) && (j >= low)) {//step 7
+            j--;//step 8
             cmp_count++;
         }
         cmp_count++;
-        if (i < j) {
+        if (i < j) {//step 9
             swap(low, j);
         }
     }
