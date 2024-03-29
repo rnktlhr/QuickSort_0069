@@ -75,6 +75,13 @@ void display() {
     cout << "\n-------------------" << endl;
     cout << "\nSorted Array" << endl;
     cout << "\n-------------------" << endl;
+
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+
+    cout << "\n\nNumber of comparasions:" << cmp_count << endl;
+    cout << "Number of data movements: " << mov_count << endl;
 }
 int main()
 {
